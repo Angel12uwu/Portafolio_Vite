@@ -1,0 +1,35 @@
+@import "../variables";
+
+nav {
+    background-color: @color-fondo-oscuro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @padding-nav;
+
+    div {
+        font-size: large;
+        font-weight: bold;
+        color: @color-texto;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+
+        a {
+            color: @color-texto;
+            text-decoration: none;
+        }
+    }
+}
+
+.hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    color: @color-texto;
+    font-size: 24px;
+    cursor: pointer;
+}

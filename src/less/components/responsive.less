@@ -1,0 +1,52 @@
+@import "../variables";
+
+@media (max-width: #break-points[tablet]) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-texto {
+        min-height: auto;
+        padding-left: 0;
+        align-items: center;
+
+        a { align-self: center; }
+    }
+
+    .hero-imagen {
+        order: -1;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .hamburguesa {
+        display: block;
+        background: none;
+        border: none;
+        color: @color-texto;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+
+            &.activo {
+                display: flex;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+    }
+}

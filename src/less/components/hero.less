@@ -1,0 +1,47 @@
+@import "../variables";
+
+#hero {
+    background: linear-gradient(to bottom, @color-fondo-oscuro, @color-hero-gradiente);
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding: 0 8%;
+    overflow: hidden;
+}
+
+.hero-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    gap: 15px;
+    min-height: 90vh;
+
+    h1, h2 { color: @color-texto; }
+
+    p {
+        color: @color-texto;
+        max-width: 600px;
+    }
+
+    a { .btn(); }
+
+    max-width: 800px;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

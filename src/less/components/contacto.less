@@ -1,0 +1,21 @@
+@import "../variables";
+
+#Contacto {
+    padding: @padding-seccion;
+    background-color: @color-fondo-oscuro;
+    text-align: center;
+
+    h2, p {
+        color: @color-texto;
+        margin-bottom: 8px;
+    }
+}
+
+.contacto-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+    a { .btn(); }
+}
